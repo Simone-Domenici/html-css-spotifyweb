@@ -97,12 +97,14 @@ ol {
     flex-grow: 1;
     background-color: #5A5A5A;
     height: 5px;
+    border-radius: 999px;
 }
 
 .player-bar .progress-bar .current-progress {
     background-color: #C1C1C1;
     width: 9.1%;
     height: 5px;
+    border-radius: 999px;
 }
 
 .song-info {
@@ -137,6 +139,28 @@ ol {
     display: flex;
     gap: 14px;
 }
+
+.volume-commands {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.volume-commands .progress-bar {
+    width: 120px;
+    flex-grow: 1;
+    background-color: #5A5A5A;
+    height: 5px;
+    border-radius: 999px;
+}
+
+.volume-commands .progress-bar .current-progress {
+    background-color: #C1C1C1;
+    width: 9.1%;
+    height: 5px;
+    border-radius: 999px;
+}
+
 /* Utilities */
 
 .line-br {
@@ -183,6 +207,10 @@ ol {
         height: 38px;
         width: 38px;
     }
+
+    .volume-commands .progress-bar {
+        width: 105px;
+    }
 }
 
 @media (max-width: 552px) {
@@ -206,5 +234,9 @@ ol {
     .song-img img {
         height: 30px;
         width: 30px;
+    }
+
+    .volume-commands .progress-bar {
+        width: 85px;
     }
 }
