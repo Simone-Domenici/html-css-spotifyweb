@@ -36,17 +36,43 @@ img {
 .app-vh .player {
     height: 90px;
     background-color: #282828;
+    flex-shrink: 0;
 }
 
 .content .sidebar {
     width: 230px;
     background-color: black;
+    flex-shrink: 0;
 } 
 
 .content .main-content {
     flex-grow: 1;
     background-color: #141922;
 }
+
+/* Player */
+
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.player .player-commands {
+    width: 37%;
+}
+
+/* Debug */
+
+.debug {
+    border: 1px solid green;
+    height: 100%;
+}
+
+/*  Media query 
+    Desktop
+    First   */
 
 @media (max-width: 878px) {
 
