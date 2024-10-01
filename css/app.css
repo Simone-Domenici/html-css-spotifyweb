@@ -11,6 +11,12 @@ a {
 	text-decoration: none;
 }
 
+button {
+    background: none;
+    border: none;
+    display: block;
+}
+
 ul,
 ol {
 	list-style: none;
@@ -57,10 +63,50 @@ img {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    color: white;
 }
 
 .player .player-commands {
     width: 37%;
+}
+
+.player-cmd {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.player-cmd button > i {
+    font-size: 16px;
+    color: white;
+}
+
+.player-cmd .play-btn {
+    font-size: 32px;
+    padding: 0 10px;
+}
+
+.player-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.player-bar .progress-bar {
+    flex-grow: 1;
+    background-color: #5A5A5A;
+    height: 5px;
+}
+
+.player-bar .progress-bar .current-progress {
+    background-color: #C1C1C1;
+    width: 9.1%;
+    height: 5px;
 }
 
 /* Debug */
