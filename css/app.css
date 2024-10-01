@@ -161,10 +161,52 @@ ol {
     border-radius: 999px;
 }
 
+/* Sidebar */
+
+.sidebar {
+    padding: 20px;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.sidebar-cta a img {
+    height: 22px;
+}
+
+.sidebar-cta .home-cta,
+.sidebar-cta .search-cta {
+    margin-bottom: 12px; 
+}
+
+.home-cta a,
+.search-cta a,
+.library-cta a {
+    align-items: center;
+}
+
+.home-cta,
+.search-cta,
+.library-cta {
+    align-items: center;
+}
+
+.home-cta a span,
+.search-cta a span,
+.library-cta a span {
+    font-size: 12px;
+
 /* Utilities */
 
 .line-br {
     display: none;
+}
+
+.d-flex {
+    display: flex;
 }
 
 /* Debug */
