@@ -12,10 +12,12 @@
         <div class="content">
             <div class="sidebar">
                 <div class="logo">
-                    <img src="./img/logo.svg" alt="Logo Spotify">
+                    <img class="logo-desktop" src="./img/logo.svg" alt="Logo Spotify">
+                    <img class="logo-mobile" src="./img/logo-small.svg" alt="Logo Spotify mobile">
                 </div>
                 <div class="sidebar-cta">
-                    <div class="home-cta">
+                    <div class="d-flex home-cta">
+                        <div class="active-bar"></div>
                         <a href="#">
                             <div class="home">
                                 <img src="./img/home.svg" alt="Home">
@@ -38,6 +40,34 @@
                                 <span>La tua libreria</span>
                             </div>
                         </a>
+                    </div>
+                </div>
+                <div class="playlist">
+                    <h3>Playlist</h3>
+                    <div class="d-flex new-playlist">
+                        <div class="plus-btn"><i class="fa-solid fa-plus"></i></div>
+                        <div>Crea Playlist</div>
+                    </div>
+                    <ul>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                        <li>Nome Playlist</li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <div class="download-cta">
+                        <img src="./img/download.svg" alt="Download app" height="12px">
+                        <p>Installa app</p>
+                    </div>
+                    <div class="profile-info">
+                        <div class="profile-img">
+                            <img src="./img/profile.svg" alt="Profile picture">
+                        </div>
+                        <h4 class="profile-name">John Doe</h4>
                     </div>
                 </div>
             </div>
