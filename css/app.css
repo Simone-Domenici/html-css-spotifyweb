@@ -116,11 +116,15 @@ ol {
     width: 42px;
     height: 42px;
     margin-right: 12px;
+    flex-shrink: 0;
 }
 
 .song-img img {
-    height: 42px;
-    width: 42px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .song-name {
@@ -177,6 +181,13 @@ ol {
     height: 22px;
 }
 
+.home,
+.search,
+.library {
+    display: flex;
+    align-items: center;
+}
+
 .sidebar-cta .home-cta,
 .sidebar-cta .search-cta {
     margin-bottom: 12px; 
@@ -186,6 +197,7 @@ ol {
 .search-cta a,
 .library-cta a {
     align-items: center;
+
 }
 
 .home-cta,
@@ -198,6 +210,8 @@ ol {
 .search-cta a span,
 .library-cta a span {
     font-size: 12px;
+    display: block;
+}
 
 /* Utilities */
 
@@ -244,11 +258,6 @@ ol {
         width: 38px;
         height: 38px;
     }
-    
-    .song-img img {
-        height: 38px;
-        width: 38px;
-    }
 
     .volume-commands .progress-bar {
         width: 105px;
@@ -272,10 +281,9 @@ ol {
         width: 30px;
         height: 30px;
     }
-    
-    .song-img img {
-        height: 30px;
-        width: 30px;
+
+    .volume-commands {
+        gap: 8px;
     }
 
     .volume-commands .progress-bar {
