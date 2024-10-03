@@ -105,6 +105,7 @@ ol {
     width: 9.1%;
     height: 5px;
     border-radius: 999px;
+    position: relative;
 }
 
 .song-info {
@@ -163,6 +164,7 @@ ol {
     width: 9.1%;
     height: 5px;
     border-radius: 999px;
+    position: relative;
 }
 
 /* Sidebar */
@@ -456,6 +458,38 @@ ol {
 .card:hover .play-overlay {
     display: block;
     display: flex;
+}
+
+.hvr-white:hover {
+    color: white;
+}
+
+.hvr-underline:hover {
+    text-decoration: underline;
+}
+
+.upscale-sm:hover {
+    transform: scale(1.1);
+}
+
+.handler {
+    position: absolute;
+    left: 100%;
+    top: 100%;
+    transform: translate(-50%, -65%);
+    height: 15px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+.progress-bar:hover .handler {
+    display: block;
+}
+
+.progress-bar:hover .current-progress {
+    background-color: #ADFF2F;
 }
 
 /* Debug */
