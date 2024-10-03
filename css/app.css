@@ -405,6 +405,7 @@ ol {
 .album-cover {
     max-width: 177px;
     aspect-ratio: 1/1;
+    position: relative;
 }
 
 .album-cover img {
@@ -436,7 +437,26 @@ ol {
     overflow: hidden;
 }
 
+/* Hover */
 
+.play-overlay {
+    position: absolute;
+    background-color: rgba(0, 0 , 0, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    display: none;
+}
+
+.card:hover .play-overlay {
+    display: block;
+    display: flex;
+}
 
 /* Debug */
 
