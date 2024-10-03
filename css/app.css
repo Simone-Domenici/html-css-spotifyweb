@@ -367,6 +367,10 @@ ol {
     gap: 15px;
 }
 
+.track-list .col {
+    width: (100% / 6);
+} 
+
 .main-title {
     color: white;
     font-size: 20px;
@@ -425,6 +429,16 @@ ol {
     .player-bar {
         gap: 15px;
     }
+
+    .track-list {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .track-list .col {
+       width: calc((100% / 4) - 10px);
+    }
 }
 
 @media (max-width: 639px) {
@@ -448,6 +462,11 @@ ol {
 
     .volume-commands .progress-bar {
         width: 105px;
+    }
+
+    
+    .track-list .col {
+        width: calc((100% / 2) - 10px);
     }
 }
 
@@ -525,7 +544,12 @@ ol {
         margin-bottom: 10px;
     }
 
-    .upgrade-banner {
-        width: calc(100% - 50px);
+    .track-list .col {
+        width: calc((100% / 2) - 5px);
+    }
+    
+    .col .card,
+    .col .card .album-cover  {
+        max-width: 220px;
     }
 }
