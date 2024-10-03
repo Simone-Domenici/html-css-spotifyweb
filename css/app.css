@@ -33,6 +33,7 @@ ol {
 .app-vh .content {
     flex-grow: 1;
     display: flex;
+    height: 0;
 }
 
 .app-vh .player {
@@ -368,7 +369,7 @@ ol {
 }
 
 .track-list .col {
-    width: calc(100% / 6);
+    width: calc((100% / 6) - 15px);
 } 
 
 .main-title {
@@ -434,6 +435,8 @@ ol {
     object-position: center;
     overflow: hidden;
 }
+
+
 
 /* Debug */
 
