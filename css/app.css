@@ -304,12 +304,17 @@ ol {
 
 /* Main Content */
 
+.main-content {
+    position: relative;
+    overflow: auto; 
+}
+
 .upgrade-banner {
-    position: fixed;
+    position: absolute;
     background-color: #00000066;
     color: white;
     height: 90px;
-    width: calc(100% - 230px);
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
